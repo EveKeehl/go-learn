@@ -8,7 +8,7 @@ import (
 
 func TestPalindromText(t *testing.T) {
 	t.Parallel()
-	t.Run("не палиндром", func(t *testing.T) {
+	t.Run("слово не палиндром", func(t *testing.T) {
 		str := "слово"
 
 		res := PalindromText(str)
@@ -16,7 +16,7 @@ func TestPalindromText(t *testing.T) {
 		require.False(t, res)
 	})
 
-	t.Run("палиндром", func(t *testing.T) {
+	t.Run("слово палиндром", func(t *testing.T) {
 		str := "АБОБА"
 
 		res := PalindromText(str)
@@ -24,7 +24,7 @@ func TestPalindromText(t *testing.T) {
 		require.True(t, res)
 	})
 
-	t.Run("не палиндром", func(t *testing.T) {
+	t.Run("фраза не палиндром", func(t *testing.T) {
 		str := "Аргентина манит негра"
 
 		res := PalindromText(str)
@@ -32,7 +32,7 @@ func TestPalindromText(t *testing.T) {
 		require.False(t, res)
 	})
 
-	t.Run("палиндром", func(t *testing.T) {
+	t.Run("фраза палиндром", func(t *testing.T) {
 		str := "аргентина манит негра"
 
 		res := PalindromText(str)
